@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <img class="header__logo" src="./img/LOGO MATTONE.png" alt="logo MATTONE">
+        <span class="header__welcome">Abierto todos los dias.</span>
+
+        <a href="https://wa.me/+54225444229"   target="_blank">
+        <div class="header-telefono">
+            <img class ="header__whatsaap-logo"src="./img/whatsaap.png" alt="whatsaap">
+            <span class="header__number">225444229</span>
+        </div></a>
+
+        <div class="header-telefono">
+            <img class="header-telefono__logo" src="./img/telefono.png" alt="telefono">
+            <span class="header__number">2254402184</span>
+        </div>
+
+        <div class="header-igfb">
+            <a class="link" href="https://www.instagram.com/mattonepinamar" target="_blank"> 
+                <img class="header__redes-Logo" src="./img/instagram-removebg-preview.png" alt="instagram">
+            </a>
+
+           <a class="link" href="https://www.facebook.com/@mattonepinamar" target="_blank"> 
+                <img class="header__redes-Logo" src="./img/Facebook_Logo-removebg-preview.png" alt="facebook">
+            </a>
+
+        </div>
+        <div class="header__maps-container">
+            <iframe class="header__maps" title="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.5146648495092!2d-56.85738358510189!3d-37.11666890224756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c9ced61214245%3A0xaab0354ae075b918!2sMattone%20Bar%20%26%20Pizza!5e0!3m2!1ses-419!2sar!4v1673305410374!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- <div class = "header__numeroMesa-Container">
+            <form class = "header__numeroMesa-titulo" onsubmit="return validarNumeroMesa(event) && storeData()">
+                <label for="numeroMesa">Numero de mesa</label>
+                <input id= "numeroMesa" class= "header__numeroMesa" type="tel">
+                <input id="submit-button" class= "header__botonEnviar"type="submit" value="Enviar">
+            </form>
+        </div>
+        <img class="header__carrito" src="./img/carrito.png" alt="">
+         -->
+    </header>
+    <main>
+        <section>
+            <button class="menu__background menu__globalTittle"> DESAYUNOS Y MERIENDAS </button>
+
+            <section class="menu__desplegable">
+               <div id="productosMenu" class="menu__container">
+                <!--menu del desayuno agregado desde JS-->
+               </div>
+            </section>
+
+
+
+            <button class="menu__background menu__globalTittle">CAFETERIA</button>
+            <section class="menu__desplegable">
+                <div id="cafeteriaMenu" class="menu__container">
+                    <!--menu de la cafeteria agregado desde JS-->
+                </div>
+            </section>
+
+
+            <button class="menu__background menu__globalTittle">WAFFLES Y PANQUEQUES</button>
+            <section class="menu__desplegable">
+                
+                <div id="wafflesPanqueques"class="menu__container">
+                     <!--menu de los waffles y panqueques agregado desde JS-->
+                </div>
+            </section>
+
+
+            <section class="menu-general">
+                <button class="menu__background menu__globalTittle">PIZZAS Y EMPANADAS</button>
+
+                <div class="menu__desplegable">
+                    <div id="pizzas" class="menu__container">
+                         <!--menu de las pizzas agregado desde JS-->
+                    </div>
+                    <div id="empanadas">
+                        <!--menu de las empanadas y faina agregado desde JS-->
+                    </div>
+                </div>    
+            </section>
+
+
+            <section class="menu-general__Hamburguesas">
+                <button class="menu__background menu__globalTittle">HAMBURGUESAS</button>
+                <div class="menu__desplegable">
+                    <div id="hamburguesas" class="menu__container">
+                        <!--menu de las hamburguesas agregado desde JS-->
+                    </div> 
+                </div>
+            </section>
+       </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

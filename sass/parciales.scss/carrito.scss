@@ -1,0 +1,20 @@
+@use 'mixin';
+
+.carritoAgregar{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: black;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+    position: relative;
+    top: 5px;
+    }
+}

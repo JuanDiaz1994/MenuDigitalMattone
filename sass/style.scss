@@ -1,0 +1,18 @@
+@import "./parciales.scss/main.scss";
+@import "./parciales.scss/header.scss";
+@import "./parciales.scss/footer.scss";
+@import "./parciales.scss/general.scss";
+@import "./parciales.scss/variables.scss";
+@import "./parciales.scss/mixin.scss";
+@import "./parciales.scss/carrito.scss";
+
+a{
+    text-decoration: none;
+    width: auto;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.show{
+    display:block;
+}

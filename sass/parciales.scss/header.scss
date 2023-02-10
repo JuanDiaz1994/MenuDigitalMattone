@@ -1,0 +1,141 @@
+@use 'mixin';
+
+.link{
+    &:hover{
+        cursor: pointer;
+    }
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    &__logo{
+        width: 100%;
+        height: 100%;
+    }
+    &__welcome{
+        color: rgb(0, 0, 0);
+        font-size: auto;
+        font-weight: lighter;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 0.6;
+        margin-bottom: 10px;
+    }
+    
+    &__whatsaap-logo{
+        width: 4.5%;
+    }
+    &__number{
+        color: rgb(0, 0, 0);
+        font-size: auto;
+        font-weight: lighter;
+        font-style: italic;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 0.6;
+        margin-left: 15px;
+    }
+    &-telefono{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &-telefono__logo{
+        width: 4%;
+    }
+    &-igfb{
+        display: flex;
+        align-items: center;
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    &__redes-Logo{
+        width: 20%;
+        height: 20%;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__maps-container{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__maps{
+        border-radius: 40px;
+        width: 80%;
+        height: 80%;
+    }
+    &__numeroMesa-Container{
+        width: 50%;
+        height: 280px;
+        background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+
+    }
+    &__numeroMesa-titulo{
+        @include mixin.textTittle;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+    }
+    &__numeroMesa{
+        text-align: center;
+        align-self: center;
+        width: 40%;
+        height: 50%;
+        font-size: 6vh;
+        margin-top: 20px;
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+    &__botonEnviar{
+        align-self: center;
+        width: 35%;
+        height: 30px;
+        margin-top: 15px;
+        font-size: 50%;
+        color: black;
+        border-radius: 10px;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            position: relative;
+            top: 5px;
+        }
+    }
+    &__carrito{
+        width: 10%;
+        height: 10%;
+        margin-top: 20px;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            position: relative;
+            top: 5px;
+        }
+    }
+}
